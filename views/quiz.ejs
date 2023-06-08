@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="css/quiz.css" />
+    </head>
+    <body>
+        <h1>Quiz</h1>
+        <h1 id="question">Question</h1>
+        <p>
+            As you move forward through the vast expanse of space, you encounter a dense and treacherous asteroid belt blocking your path. Fortunately, you have a set of navigation instructions to guide you through the perilous obstacles.
+            However, these instructions are encoded in a peculiar way, adding an extra layer of complexity to your mission.
+        </p>
+        <p>
+            The encoded navigation instructions consist of a series of maneuvers represented by numerical codes. Each code corresponds to a specific action you must take to navigate through the asteroid belt. However, deciphering these
+            instructions and determining the minimum number of maneuvers required to reach your destination safely is crucial for the success of your mission.
+        </p>
+        <p>
+            In this particular scenario, the numerical codes represent the current coordinates of your spacecraft and the destination coordinates you need to reach in the asteroid belt. Each maneuver involves choosing an integer k from the
+            range of 1 to 10 and either adding it to or subtracting it from the current coordinates of your spacecraft. The objective is to transform the starting coordinates to match the destination coordinates by carefully selecting the
+            maneuvers.
+        </p>
+        <p>
+            Now, utilizing your problem-solving skills and understanding of the encoded instructions, how can you decipher the numerical codes and calculate the minimum number of maneuvers needed to transform the starting coordinates of
+            your spacecraft to match the destination coordinates? Your expertise in unraveling the encoded instructions and determining the optimal sequence of maneuvers will be vital in navigating through the asteroid belt and ensuring a
+            safe and successful journey through space.
+        </p>
+        <h2 id="example-1">Example 1</h2>
+        <pre><code><span class="hljs-attribute">Input</span>: current coordinate = 13 , distination = 42
+
+<span class="http"><span class="hljs-attribute">Output</span>: 3
+
+<span class="avrasm"><span class="hljs-symbol">explanation:</span>
+<span class="hljs-number">13</span>→<span class="hljs-number">23</span>→<span class="hljs-number">32</span>→<span class="hljs-number">42</span> (<span class="hljs-keyword">add</span> <span class="hljs-number">10</span>, <span class="hljs-keyword">add</span> <span class="hljs-number">9</span>, <span class="hljs-keyword">add</span> <span class="hljs-number">10</span>).</span></span>
+</code></pre>
+        
+
+
+
+        <form action="/submit" method="POST">
+            <% for (let i = 0; i < questions.length; i++) { %>
+            <h3><%= questions[i].question %></h3>
+            <input type="text" name="answer<%= i %>" placeholder="Enter your answer" />
+            <% } %>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
