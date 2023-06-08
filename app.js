@@ -39,6 +39,6 @@ app.post('/submit', (req, res) => {
     res.render('score', { score, questions });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Quiz app running on port 3000');
 });
