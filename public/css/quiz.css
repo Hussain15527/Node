@@ -4,7 +4,13 @@ body {
 }
 
 .outer-body {
+
+    background-color: #fff;
+    border-radius: 1rem;
     margin: 2rem;
+    padding: 2rem;
+    margin-bottom: 20px;
+
 }
 
 .container {
