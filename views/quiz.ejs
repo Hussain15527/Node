@@ -38,10 +38,18 @@
 
 
         <form action="/submit" method="POST">
-            <% for (let i = 0; i < questions.length; i++) { %>
-            <h3><%= questions[i].question %></h3>
-            <input type="text" name="answer<%= i %>" placeholder="Enter your answer" />
-            <% } %>
+            <h2>Test Case 1</h2>
+            <label for=""><i>Current Co-Ordinate=19098</i> and <i>Distination=123243</i></label>
+            <br>
+            <input type="text" name="Day-1" placeholder="Enter your answer" />
+            <button type="submit">Submit</button>
+        </form>
+
+        <form action="/submit" method="POST">
+            <h2>Test Case 2</h2>
+            <label for=""><i>Current Co-Ordinate=5609832</i> and <i>Distination=5423243</i></label>
+            <br>
+            <input type="text" name="Day-1" placeholder="Enter your answer" />
             <button type="submit">Submit</button>
         </form>
     </body>
