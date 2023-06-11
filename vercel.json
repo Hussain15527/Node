@@ -1,16 +1,15 @@
 {
     "version": 2,
-    "name": "Quiz App",
     "builds": [
         {
             "src": "app.js",
-            "use": "@vercel/node"
+            "use": "@now/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/app.js"
+            "dest": "app.js"
         }
     ]
 }
